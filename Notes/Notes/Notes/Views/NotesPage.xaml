@@ -5,7 +5,9 @@
              Title="Password Manager">
     <!-- Add an item to the toolbar -->
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Add"
+        <ToolbarItem Text="Aggungi"
+                     
+                 
                      Clicked="OnAddClicked" />
     </ContentPage.ToolbarItems>
 

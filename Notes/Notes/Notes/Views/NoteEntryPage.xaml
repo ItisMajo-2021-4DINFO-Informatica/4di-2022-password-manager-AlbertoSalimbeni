@@ -2,28 +2,30 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Notes.Views.NoteEntryPage"
-             Title="Note Entry">
+             Title="Servizio">
     <!-- Layout children vertically -->
     <StackLayout Margin="20">
         <Editor Placeholder="ServiceName"
                 Text="{Binding ServiceName}"
-                HeightRequest="100" />
+                HeightRequest="65" />
         <Editor Placeholder="Username"
                 Text="{Binding Username}"
-                HeightRequest="100" />
+                HeightRequest="65" />
         <Editor Placeholder="Password"
                 Text="{Binding Password}"
-                HeightRequest="100" />
+                HeightRequest="65" />
         <Editor Placeholder="URL"
                 Text="{Binding URL}"
-                HeightRequest="100" />
+                HeightRequest="65" />
         <!-- Layout children in two columns -->
         <Grid ColumnDefinitions="*,*">
-            <Button Text="Save"
-                    Clicked="OnSaveButtonClicked" />
+            <Button Text="Salva"
+                    Clicked="OnSaveButtonClicked"
+                     BackgroundColor="#4BC3E3"/>
             <Button Grid.Column="1"
-                    Text="Delete"
-                    Clicked="OnDeleteButtonClicked"/>
+                    Text="Elimina"
+                    Clicked="OnDeleteButtonClicked"
+                     BackgroundColor="#4BC3E3"/>
         </Grid>
     </StackLayout>
 </ContentPage>

@@ -2,10 +2,16 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Notes.Views.AboutPage"
+             BackgroundColor="White"
              Title="About">
     <!-- Layout children in two rows -->
     <Grid RowDefinitions="Auto,*">
-        
+        <Image Source="xamarin_logo.png"
+               BackgroundColor="{OnPlatform iOS=LightSlateGray, Android=#4BC3E3}"
+               VerticalOptions="Center"
+               HeightRequest="64"
+               />
+
         <!-- Layout children vertically -->
         <StackLayout Grid.Row="1"
                      Margin="20"
@@ -16,15 +22,19 @@
                         <FormattedString.Spans>
                             <Span Text="Questa App è un Password Manager, usalo per salvare le tue Password ed evitare di dimenticarle!"
                                   FontAttributes="Bold"
-                                  FontSize="22" />
+                                  FontSize="22"
+                                  TextColor="Black"/>
                             
                         </FormattedString.Spans>
                     </FormattedString>
                 </Label.FormattedText>
             </Label>
-            <Label Text="ITI Majorana" />
+            <Label Text="ITI Majorana" 
+                   TextColor="Black"/>
             <Button Text="Sito Ufficaliale"
-                    Clicked="OnButtonClicked" />
+                    BackgroundColor="#4BC3E3"
+                    Clicked="OnButtonClicked"
+                    TextColor="Black"/>
         </StackLayout>
     </Grid>
 </ContentPage>
